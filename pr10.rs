@@ -95,18 +95,17 @@ if middle_slice == "на"
 else {
     middle_name.push('a');
 }
-
 full_name = last_name + " " + &first_name + " " +  &middle_name;
 //println!("{}", full_name);
-return full_name; 
- 
+return full_name;  
+
 }
 
 
 fn main() {
 
 	println!("Введите своё ФИО ");
- 	let mut full_name  = String::new();
+ 	let mut full_name = String::new();
 	io::stdin().read_line(&mut full_name).expect("Failed");
 	let result = update_fio(full_name);
 	println!("Результат: {}", result);
